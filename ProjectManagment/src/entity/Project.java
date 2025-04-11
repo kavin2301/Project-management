@@ -22,7 +22,6 @@ public class Project {
         this.status = status;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }

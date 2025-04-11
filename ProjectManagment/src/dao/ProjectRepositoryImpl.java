@@ -3,6 +3,8 @@ package dao;
 import entity.Employee;
 import entity.Project;
 import entity.Task;
+import entity.Expense;
+import java.time.LocalDate;
 import util.DBConnUtil;
 
 import java.sql.*;
@@ -231,5 +233,22 @@ public class ProjectRepositoryImpl implements IProjectRepository {
             throw new ProjectNotFoundException("Project not found with id: " + projectId);
         }
         return tasks;
+    }
+    @Override
+    public boolean addExpense(Expense expense) {
+        // TODO: Implement DB insertion logic
+        return false;
+    }
+
+    @Override
+    public List<Expense> getExpensesByEmployeeAndDateRange(int empId, LocalDate start, LocalDate end) {
+        // TODO: Implement logic to fetch expenses
+        return null;
+    }
+
+    @Override
+    public double getTotalExpensesByEmployeeAndDateRange(int empId, LocalDate start, LocalDate end) {
+        // TODO: Implement logic to calculate total
+        return 0.0;
     }
 }

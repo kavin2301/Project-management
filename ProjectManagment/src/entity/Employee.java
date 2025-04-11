@@ -25,7 +25,6 @@ public class Employee {
         this.projectId = projectId;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
