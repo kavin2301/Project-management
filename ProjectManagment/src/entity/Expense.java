@@ -5,11 +5,10 @@ import java.time.LocalDate;
 public class Expense {
     private int expenseId;
     private int employeeId;
-    private String category;         // Added
+    private String category;         
     private double amount;
     private LocalDate expenseDate;
 
-    // Constructors
     public Expense() {}
 
     public Expense(int employeeId, String category, double amount, LocalDate expenseDate) {
@@ -19,7 +18,6 @@ public class Expense {
         this.expenseDate = expenseDate;
     }
 
-    // Getters and Setters
     public int getExpenseId() {
         return expenseId;
     }
@@ -52,7 +50,7 @@ public class Expense {
         this.amount = amount;
     }
 
-    public LocalDate getDate() {      // Changed to match usage in ProjectApp.java
+    public LocalDate getDate() {
         return expenseDate;
     }
 
