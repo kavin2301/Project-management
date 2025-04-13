@@ -16,7 +16,6 @@ public interface IProjectRepository {
     boolean assignTaskInProjectToEmployee(int taskId, int projectId, int employeeId);
     boolean deleteEmployee(int userId);
     boolean deleteProject(int projectId);
-    boolean deleteTask(int taskId); // Add this line
     List<Task> getAllTasks(int empId, int projectId);
     List<Project> searchProjectsByEmployeeId(int empId);
     List<Task> searchTasksByEmployeeId(int empId);
