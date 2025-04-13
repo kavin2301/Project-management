@@ -236,13 +236,11 @@ public class ProjectRepositoryImpl implements IProjectRepository {
     }
     @Override
     public boolean addExpense(Expense expense) {
-        // TODO: Implement DB insertion logic
         return false;
     }
 
     @Override
     public List<Expense> getExpensesByEmployeeAndDateRange(int empId, LocalDate start, LocalDate end) {
-        // TODO: Implement logic to fetch expenses
         return null;
     }
 
